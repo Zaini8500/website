@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .search-container {
+            margin-top: 100px;
+        }
+        .search-container h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #4285f4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-container .form-control {
+            border-radius: 25px;
+            font-size: 18px;
+            padding: 20px;
+            box-shadow: none;
+        }
+        .search-container .btn-search {
+            border-radius: 25px;
+            font-size: 18px;
+            padding: 20px 30px;
+            box-shadow: none;
+        }
+        .search-container .btn-search:hover {
+            background-color: #4285f4;
+            color: #fff;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 search-container">
+                <img src="google-logo-9834.png" alt="Custom Search Engine Logo" class="logo">
+                <form action="https://www.google.com/search" method="GET">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="q" placeholder="Search on Google" aria-label="Search on Google" aria-describedby="searchButton">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary btn-search" type="submit" id="searchButton">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-center">Advanced Search Options:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Customize your search query</li>
+                    <li class="list-group-item">Search within a specific site</li>
+                    <li class="list-group-item">Use quotes to search for an exact phrase</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
